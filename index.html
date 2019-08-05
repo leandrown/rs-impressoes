@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+   <!-- FAVICONS -->
+   <meta name="msapplication-square70x70logo" content="favicon/smalltile.png">
+   <meta name="msapplication-square150x150logo" content="favicon/mediumtile.png">
+   <meta name="msapplication-wide310x150logo" content="favicon/widetile.png">
+   <meta name="msapplication-square310x310logo" content="favicon/largetile.png">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
+   <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+   <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+   <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
+   <!-- ACESSIBILIDADE -->
+   <link rel="stylesheet" href="styles/css/acessibilidade/santillanaAcessibilidade.css">
+   <link rel="stylesheet" href="styles/css/acessibilidade/santillanaAcessibilidadeCustom.css">
+   <link id="sa_altocontraste" rel="stylesheet" href="styles/css/acessibilidade/sa.altocontraste.css" disabled>
+   <link id="sa_amarelopreto" rel="stylesheet" href="styles/css/acessibilidade/sa.amarelopreto.css" disabled>
+   <link id="sa_cinzainvertida" rel="stylesheet" href="styles/css/acessibilidade/sa.cinzainvertida.css" disabled>
+   <link id="sa_corinvertida" rel="stylesheet" href="styles/css/acessibilidade/sa.corinvertida.css" disabled>
+   <link id="sa_monocromatico" rel="stylesheet" href="styles/css/acessibilidade/sa.monocromatico.css" disabled>
+
+   <!-- FEATHER ICONs CDN -->
+   <script src="https://unpkg.com/feather-icons"></script>
+
+   <!-- THEME CSS -->
+   <link rel="stylesheet" href="styles/css/theme.css" />
+
+   <!-- MENUs, DROPDOWNs, MODALs, ETC -->
+   <script src="js/actions.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   <title>Revolution Soluções Impressão</title>
+</head>
+
+<body>
+   <!-- NAVBAR & ACCESSIBILITY -->
+   <div class="fixed-topbar">
+      <nav class="navbar" id="navbar">
+         <div class="container responsivebar row">
+            <img src="images/logo.png" id="imglogo">
+            <!-- desktop menu -->
+            <ul class="desk">
+               <li><a href="#inicio">Início</a></li>
+               <li><a href="#produtos">Produtos</a></li>
+               <li><a href="#contato">Contato</a></li>
+               <li><a href="https://api.whatsapp.com/send?phone=5511950593019" class="btn-leaf secondary-bg">Chamar</a></li>
+            </ul>
+            <!-- mobile menu button -->
+            <i data-feather="menu" class="menu-bt mob" onclick="openMenu()"></i>
+         </div>
+      </nav>
+      <!-- mobile menu -->
+      <ul class="collapsible" id="collapsible-menu">
+         <li><a href="#inicio">Início</a></li>
+         <li><a href="#produtos">Produtos</a></li>
+         <li><a href="#contato">Contato</a></li>
+         <li><a href="https://api.whatsapp.com/send?phone=5511950593019">Chamar</a></li>
+      </ul>
+   </div>
+
+   <!-- BANNER PRINCIPAL / CAROSEL -->
+   <header class="single-item-carousel">
+      <div class="slide">
+         <section class="banner-main" id="inicio">
+            <div class="container">
+               <div class="prod-info">
+                  <h1>Patinete Elétrico Xiaomi</h1>
+                  <h2>Leve sua diversão pra qualquer lugar</h2>
+                  <p class="desk">
+                     Sucesso em todo o mundo, os patinetes elétricos da Xiaomi chegaram com tudo!
+                     Perfeitos para o seu dia-a-dia, seja ele para trabalhar, para o lazer e para utilidade diária.
+                  </p>
+                  <img src="images/scooter_xiaomi.png" alt="Scooter Xiaomi" class="mob">
+                  <a href="produtos/patinete-xiaomi/index.html" class="btn-leaf primary-bg">Detalhes</a>
+                  <div class="banner-contacts">
+                     <span class="row contact-spacing"><img src="images/whats-logo.svg" alt="" class="contact-icons">WhatsApp (11) 95059-3019</span>
+                     <span class="row contact-spacing"><i data-feather="map-pin" class="contact-icons"></i>Rua Hannemann, 415 piso 1 loja 180 - Canindé - São Paulo, SP</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <div class="slide">
+         <section class="banner-two">
+            <div class="container">
+               <div class="address-info">
+                  <h1>Visite as nossas lojas físicas</h1>
+                  <div class="address-info-panel">
+                     <div class="address-info-columns">
+                        <h2>Loja 1 - Galeria Pajé</h2>
+                        <p>Rua Hannemann, 415 piso 1 loja 180<br>Canindé - São Paulo - SP<br>CEP: 03031-040</p>
+                     </div>
+                     <div class="address-info-columns">
+                        <h2>Loja 2 - Santa Efigênia</h2>
+                        <p>Rua General Osório, 552<br>Santa Efigênia - São Paulo - SP<br>CEP: 01213-000</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <div class="slide">
+         <section class="banner-three">
+            <div class="container">
+               <div class="address-info">
+                  <h1>Kit Motor Moskito 2019</h1>
+                  <h2>O melhor custo-benefício</h2>
+                  <p>Com o motor Moskito de 3HP e 80cc você tem mais liberdade com a economia que você sempre sonhou.</p>
+                  <div class="row">
+                     <div class="price-box">
+                        <span>Apenas</span>
+                        <h3>R$ 588,90</h3>
+                        <span>À VISTA</span>
+                     </div>
+                     <a href="#" class="btn-leaf primary-bg">Ver detalhes</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </header>
+   <script type="text/javascript" src="js/carousel.js"></script>
+
+   <!-- BANNERS -->
+   <section>
+      <div class="container">
+         <div class="features">
+            <div class="row">
+               <img src="images/bike.png" alt="bike">
+               <div>
+                  <h3>Melhores Produtos</h3>
+                  <h4>Bikes, Patinetes e muito mais</h4>
+               </div>
+            </div>
+            <div class="row">
+               <img src="images/price.png" alt="price">
+               <div>
+                  <h3>Melhores Preços</h3>
+                  <h4>Comprove você mesmo</h4>
+               </div>
+            </div>
+            <div class="row">
+               <img src="images/suport.png" alt="suport">
+               <div>
+                  <h3>Manutenção</h3>
+                  <h4>Peças e acessórios</h4>
+               </div>
+            </div>
+            <div class="row">
+               <img src="images/warranty.png" alt="warranty">
+               <div>
+                  <h3>Garantia</h3>
+                  <h4>Melhor procedência</h4>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- VITRINE -->
+   <section id="produtos">
+      <div class="container vitrine">
+         <div class="card">
+            <img src="produtos/patinete-xiaomi/prod1.jpg" alt="Patinete Xiaomi">
+            <h3>Patinete Xiaomi</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 2.850,00</span>
+               <a href="produtos/patinete-xiaomi/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/chopper/prod1.jpg" alt="Scooter Elétrica Chopper">
+            <h3>Scooter Elétrica Chopper</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 6.499,00</span>
+               <a href="produtos/chopper/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/hoverboard/prod1.jpg" alt="Hoverboard">
+            <h3>Hoverboard</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 650,00</span>
+               <a href="produtos/hoverboard/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/scooter-good/prod1.jpg" alt="Scooter Elétrica Good">
+            <h3>Scooter Good</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 6.790,00</span>
+               <a href="produtos/scooter-good/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/bicicleta-eletrica-ebike-350w/prod1.png" alt="E-Bike 350w">
+            <h3>Bicicleta Elétrica E-bike 350w</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 2.990,00</span>
+               <a href="produtos/bicicleta-eletrica-ebike-350w/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/bicicleta-eletrico-bikelete-deus-sol-350w/prod1.png" alt="Bikelete deus sol 350w">
+            <h3>Bicicleta Elétrica Bikelete deus sol 350w</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 3.200,00</span>
+               <a href="produtos/bicicleta-eletrico-bikelete-deus-sol-350w/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/bicicleta-caicara-sport/prod1.png" alt="Caiçara Sport">
+            <h3>Bicicleta Caiçara Sport</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 1.429,00</span>
+               <a href="produtos/bicicleta-caicara-sport/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/bicicleta-caicara-xr/prod1.png" alt="Caiçara XR">
+            <h3>Bicicleta Caiçara XR</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 1.590,00</span>
+               <a href="produtos/bicicleta-caicara-xr/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/bikelete-2-tempos-wmx-sport/prod1.png" alt="WMX 2 Tempos">
+            <h3>Bicicleta WMX 2 Tempos Sport</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 2.699,00</span>
+               <a href="produtos/bikelete-2-tempos-wmx-sport/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/bikelete-4-tempos-wmx-sport/prod1.png" alt="WMX 4 Tempos">
+            <h3>Bicicleta WMX 4 Tempos Sport</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 4.300,00</span>
+               <a href="produtos/bikelete-4-tempos-wmx-sport/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/moby-2-tempos/prod1.png" alt="Moby 2 Tempos">
+            <h3>Bicicleta Motorizada Moby 2 Tempos</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 3.300,00</span>
+               <a href="produtos/moby-2-tempos/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/moby-4-tempos/prod1.png" alt="Moby 4 Tempos">
+            <h3>Bicicleta Motorizada Moby 4 Tempos</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 4.700,00</span>
+               <a href="produtos/moby-4-tempos/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+
+         <div class="card">
+            <img src="produtos/kit-motor-80cc-moskito-original-coringa/prod1.jpg" alt="Kit Motor Moskito Original">
+            <h3>Kit Motor 80cc Para Bicicleta Moskito Original Coringa</h3>
+            <h4>Desc. curta</h4>
+            <div class="row expand">
+               <span>R$ 699,90</span>
+               <a href="produtos/kit-motor-80cc-moskito-original-coringa/index.html" class="btn-secondary small">Detalhes</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- VIDEO -->
+   <section>
+      <div class="video-view">
+         <div style="align-items: center;
+            display: flex;
+            flex-flow: column;">
+            <h2>Nova Scooter Elétrica</h2>
+            <h3>Assista ao vídeo da Chopper Linha 2019</h3>
+            <a href="https://www.youtube.com/watch?v=_0A87NlibME" target="blanck_" title="Assistir">
+               <img src="images/play-button.svg" alt="play" width="80px" />
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- CONTATO -->
+   <section id="contato">
+      <div class="container">
+         <h1 style="text-align: center; font-size: 32px;">Entre em Contato</h1>
+         <form action="">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Telefone">
+            <input type="text" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <a href="" class="btn-primary">Enviar</a>
+         </form>
+      </div>
+   </section>
+
+   <!-- RODAPE -->
+   <footer id="footer">
+      <div class="container spread">
+         <div class="row spread">
+            <img src="images/logo.png" id="imglogo">
+            <address>
+               <ul>
+                  <li>Loja 1 - Galeria Pajé:</li>
+                  <li>Rua Hannemann, 415 piso 1 loja 180</li>
+                  <li>Canindé - São Paulo - SP</li>
+                  <li>CEP: 03031-040</li>
+               </ul>
+               <ul>
+                  <li><i data-feather="phone-call" class="menu-bt"></i><span> (11) 2729-5040</span></li>
+               </ul>
+               <ul>
+                  <li>De segunda a sexta-feira</li>
+                  <li>das 7:00 às 16:00</li>
+                  <li>Sábado das 7:00 às 14:00</li>
+               </ul>
+            </address>
+            <address>
+               <ul>
+                  <li>Loja 2 - Santa Efigênia:</li>
+                  <li>Rua General Osório, 552</li>
+                  <li>Santa Efigênia - São Paulo - SP</li>
+                  <li>CEP: 01213-000</li>
+               </ul>
+               <ul>
+                  <li><i data-feather="phone-call" class="menu-bt"></i><span> (11) 3222-6672</span></li>
+                  <li><i data-feather="phone-call" class="menu-bt"></i><span> (11) 3222-3848</span></li>
+               </ul>
+               <ul>
+                  <li>De segunda a sexta-feira</li>
+                  <li>das 9:00 às 18:00</li>
+                  <li>Sábado das 9:00 às 13:00</li>
+               </ul>
+            </address>
+            <div class="credits">
+               <div class="social-media">
+                  <a href="https://www.youtube.com/channel/UCY3YutWAhxXxUt_cA-rF6EQ/feed" target="_blank"><i data-feather="youtube" class=""></i></a>
+                  <a href="https://www.facebook.com/casadamobiletepaje" target="_blank"><i data-feather="facebook" class=""></i></a>
+                  <a href="https://www.instagram.com/casamobilete" target="_blank"><i data-feather="instagram" class=""></i></a>
+               </div>
+               <span>&copy; 2019 - Casa da Mobilete</span>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- FEATHER ICONs -->
+   <script>
+      feather.replace()
+   </script>
+</body>
+
+</html>
