@@ -147,11 +147,11 @@ header, .details-page {
 
 /* BANNER */
 .banner-main, .banner-two, .banner-three {
-   background-image: url('../../images/banner-topo.jpg');
+   background-image: url('../../images/banner.jpg');
    background-size: cover;
    display: flex;
    align-items: center;
-   min-height: 600px;
+   height: 400px;
    color: $light;
    h1 {
       font-size: 42px;
