@@ -32,7 +32,7 @@ body {
     background-color: #f5f5f5;
     -webkit-font-smoothing: antialiased;
 }
-section, header, footer {
+section, footer {
     width: 100%;
 }
 header, footer, .container {
@@ -40,7 +40,11 @@ header, footer, .container {
     flex-flow: column;
     box-sizing: border-box;
 }
-header { padding: 0; }
+header {
+    width: 1000px;
+    margin: auto;
+    padding: 0;
+}
 footer, .container { padding: 20px; }
 img {
     max-width: 100%;
@@ -138,4 +142,5 @@ input, textarea {
 }
 .small {
     padding: 5px 10px;
+    margin: auto;
 }
