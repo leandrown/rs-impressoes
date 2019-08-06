@@ -39,9 +39,6 @@
    color: $light;
    padding: 10px 0;
 }
-header, .single-item-carousel {
-   background-color: $tertiary-color;
-}
 header, .details-page {
    margin-top: 50px;
 }
@@ -65,7 +62,7 @@ header, .details-page {
 
 /* Slider - Clients Section */
 .slick-slide { margin: 0; }
-.slick-slide img { width: 100%; }
+// .slick-slide img { width: 100%; }
 .slick-slider {
   position: relative;
   display: block;
@@ -120,7 +117,7 @@ header, .details-page {
   min-height: 1px;
 }
 [dir='rtl'] .slick-slide { float: right; }
-// .slick-slide img { display: block; }
+.slick-slide img { display: block; }
 .slick-slide.slick-loading img { display: none; }
 .slick-slide.dragging img { pointer-events: none; }
 .slick-initialized .slick-slide { display: block; }
@@ -219,12 +216,7 @@ header, .details-page {
    flex-flow: row;
    flex-wrap: wrap;
    justify-content: center;
-   .card {
-      background: $light;
-      max-width: 200px;
-      padding: 20px;
-      margin: 20px;
-      text-align: center;
+   .info, .card {
       h3 {
          font-weight: bold;
          margin: 0;
@@ -233,6 +225,24 @@ header, .details-page {
          color: #ccc;
          margin-top: 0;
       }
+   }
+   .info {
+      width: 300px;
+      padding: 10px;
+      margin: 10px;
+      border-right: #bababa dashed 1px;
+      text-align: center;
+      h4 { color: $secondary-color; }
+   }
+   .info:last-child {
+      border-right: none;
+   }
+   .card {
+      background: $light;
+      max-width: 200px;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
    }
 }
 .video-view {
@@ -248,13 +258,7 @@ header, .details-page {
 
 // PAGE DETAILS
 .details-page {
-   h1 {
-   font-size:  36px;
-   }
-   .header {
-   display: flex;
-   flex-wrap: wrap;
-   }
+   h1 { font-size:  36px; }
    .image-box, .price-box { background-color: $light }
    .image-box { flex: 3; margin-right: 20px; }
    .price-box { 
@@ -379,7 +383,13 @@ header, .details-page {
    }
 }
 .spread { justify-content: space-around; }
-div.row.spread { align-items: flex-start; }
+div.row.spread {
+   align-items: flex-start;
+   ul {
+      list-style: none;
+      padding: 0;
+   }
+}
 address ul { list-style: none; padding: 0; }
 address, address ul li, div span { font-size: 14px; }
 address ul li:first-child { font-weight: bold; }
