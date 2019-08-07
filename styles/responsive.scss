@@ -1,6 +1,6 @@
 .responsivebar {
    @include between;
-   padding: 0 20px !important;
+   // padding: 0 20px;
    ul.desk {
       list-style: none;
       li {
@@ -28,8 +28,8 @@
    }
 }
 .open {
-   display: block !important;
-   height: 120px;
+   display: block;
+   height: 255px;
 }
 @media (min-width: 1200px) {
    .container {
@@ -53,6 +53,7 @@
    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
+   .fixed-topbar nav { padding: 16px 0; }
    .banner-main, .banner-two, .banner-three {
       min-height: 842px;
       align-items: center;
@@ -101,6 +102,6 @@
 @media (max-width: 480px) {
    .navbar .container {
       width: auto;
-      padding: 0;
+      padding: 6px 25px;
    }
 }

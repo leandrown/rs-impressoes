@@ -47,10 +47,10 @@ header, .details-page {
 }
 .responsivebar {
    @include between;
-   padding: 10px 0;
+   padding: 0 60px;
 }
 #imglogo {
-   width: 120px;
+   width: 200px;
    transition: all .3s;
 }
 .input {
@@ -144,7 +144,7 @@ header, .details-page {
 
 /* BANNER */
 .banner-main, .banner-two, .banner-three {
-   background-image: url('../../images/banner.jpg');
+   background-image: url('../../images/banner.png');
    background-size: cover;
    display: flex;
    align-items: center;
@@ -201,10 +201,10 @@ header, .details-page {
    .contact-icons { width: 24px; margin-right: 8px; }
 }
 .banner-two {
-   background-image: url('../../images/banner02.png');
+   background-image: url('../../images/banner.png');
 }
 .banner-three {
-   background-image: url('../../images/banner03.png');
+   background-image: url('../../images/banner.png');
 }
 .features {
    @include between;
@@ -232,28 +232,18 @@ header, .details-page {
       margin: 10px;
       border-right: #bababa dashed 1px;
       text-align: center;
-      h4 { color: $secondary-color; }
+      h4 { color: $tertiary-color; }
    }
    .info:last-child {
       border-right: none;
    }
    .card {
       background: $light;
-      max-width: 200px;
+      max-width: 300px;
       padding: 20px;
-      margin: 20px;
+      margin: 10px;
       text-align: center;
    }
-}
-.video-view {
-   background-image: url('../../images/video-bg.jpg');
-   background-size: cover;
-   height: 300px;
-   color: $light;
-   @include center-all;
-   flex-flow: row;
-   h2, h3, h4 { margin:0 0 10px 0; }
-   h2 { font-size: 32px; }
 }
 
 // PAGE DETAILS

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+   <!-- ACESSIBILIDADE -->
+   <link rel="stylesheet" href="styles/css/acessibilidade/santillanaAcessibilidade.css">
+   <link rel="stylesheet" href="styles/css/acessibilidade/santillanaAcessibilidadeCustom.css">
+   <link id="sa_altocontraste" rel="stylesheet" href="styles/css/acessibilidade/sa.altocontraste.css" disabled>
+   <link id="sa_amarelopreto" rel="stylesheet" href="styles/css/acessibilidade/sa.amarelopreto.css" disabled>
+   <link id="sa_cinzainvertida" rel="stylesheet" href="styles/css/acessibilidade/sa.cinzainvertida.css" disabled>
+   <link id="sa_corinvertida" rel="stylesheet" href="styles/css/acessibilidade/sa.corinvertida.css" disabled>
+   <link id="sa_monocromatico" rel="stylesheet" href="styles/css/acessibilidade/sa.monocromatico.css" disabled>
+
+   <!-- THEME CSS -->
+   <link rel="stylesheet" href="styles/css/theme.css" />
+
+   <!-- FEATHER ICONs CDN -->
+   <script src="https://unpkg.com/feather-icons"></script>
+
+   <!-- MENUs, DROPDOWNs, MODALs, ETC -->
+   <script src="js/actions.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+   <title>Produtos | Revolution Soluções</title>
+</head>
+
+<body>
+   <!-- NAVBAR & ACCESSIBILITY -->
+   <div class="fixed-topbar">
+      <nav class="navbar" id="navbar">
+         <div class="container responsivebar row">
+            <img src="images/logo.png" id="imglogo">
+            <!-- desktop menu -->
+            <ul class="desk">
+               <li><a href="index.html#inicio">Início</a></li>
+               <li><a href="quem-somos.html">Quem Somos</a></li>
+               <li><a href="outsourcing.html">Outsourcing</a></li>
+               <li><a href="servicos.html">Serviços</a></li>
+               <li><a href="produtos.html#navbar">Produtos</a></li>
+               <li><a href="index.html#contato">Contato</a></li>
+               <li><a href="index.html#" class="btn-leaf secondary-bg">Chamar</a></li>
+            </ul>
+            <!-- mobile menu button -->
+            <i data-feather="menu" class="menu-bt mob" onclick="openMenu()"></i>
+         </div>
+      </nav>
+      <!-- mobile menu -->
+      <ul class="collapsible" id="collapsible-menu">
+         <li><a href="index.html#inicio">Início</a></li>
+         <li><a href="quem-somos.html">Quem Somos</a></li>
+         <li><a href="outsourcing.html">Outsourcing</a></li>
+         <li><a href="servicos.html">Serviços</a></li>
+         <li><a href="produtos.html#navbar">Produtos</a></li>
+         <li><a href="index.html#contato">Contato</a></li>
+         <li><a href="index.html#">Chamar</a></li>
+      </ul>
+   </div>
+
+   <!-- DETALHES PRODUTO -->
+   <section class="details-page">
+      <div class="container">
+         <h1>Produtos</h1>
+         <div class="header">
+            <div class="price-box">
+               <p>
+                  A Revolution Soluções oferece aos seus clientes as melhores opções de equipamentos atendendo todas as necessidades do mercado de impressão e
+                  digitalização de documentos.
+               </p>
+
+               <h2>Multifuncionais</h2>
+               <p>Equipamentos práticos e versáteis, os multifuncionais oferecem diversos recursos integrados em um único produto reduzindo espaço e investimento.</p>
+               <p>Eles unem as funções de copiadora, impressora, scanner e Fax para facilitar o dia-a-dia de um escritório.</p>
+               <p>Com tecnologia digital “Laser” proporcionam qualidade e rapidez aos seus usuários.</p>
+               </p>
+
+               <h2>Impressoras</h2>
+               <p>Rápidas e com alta produtividade, as impressoras laser oferecem alta qualidade de impressão com baixo custo.</p>
+
+               <h2>Suprimentos</h2>
+               <p>Cartuchos, toners e suprimentos em geral</p>
+
+               <img src="images/multifuncionais.png" alt="Multifuncionais">
+               <img src="images/impressoras.png" alt="Impressoras">
+               <img src="images/scanner.png" alt="Suprimentos">
+               <a href="https://api.whatsapp.com/send?phone=+5511954695925" class="btn-primary block">Tirar Dúvidas</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- TABS DESCRIPTION, MORE DETAILS, SPECIFICATIONS -->
+   <section>
+      <div class="container">
+         <div class="more-details">
+
+         </div>
+      </div>
+   </section>
+
+   <!-- RODAPE -->
+   <footer id="footer">
+      <div class="container spread">
+         <div class="row spread">
+            <img src="images/logo.png" id="imglogo">
+            <address>
+               <ul>
+                  <li>Rua Netuno, 317 - Jd. Santa Maria </li>
+                  <li>Guarulhos - SP</li>
+                  <li>CEP: 07133-450</li>
+               </ul>
+            </address>
+            <ul>
+               <li><i data-feather="phone-call" class="menu-bt"></i><span> (11) 2088-0496</span></li>
+            </ul>
+            <div class="credits">
+               <div class="social-media">
+                  <a href="#" target="_blank"><i data-feather="youtube" class=""></i></a>
+                  <a href="#" target="_blank"><i data-feather="facebook" class=""></i></a>
+                  <a href="#" target="_blank"><i data-feather="instagram" class=""></i></a>
+               </div>
+               <span>&copy; 2019 - Revolution Soluções</span>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- FEATHER ICONs -->
+   <script>
+      feather.replace();
+   </script>
+</body>
+
+</html>

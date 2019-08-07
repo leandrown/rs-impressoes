@@ -13,18 +13,14 @@ function openMenu() {
   element.classList.toggle("open");
 }
 
-
-
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    // document.getElementById("inicio").style.background = "#251836";
-    document.getElementById("navbar").style.padding = "5px 0";
+    document.getElementById("navbar").style.padding = "15px 0";
     document.getElementById("imglogo").style.width = "100px";
   } else {
-    // document.getElementById("inicio").style.background = "red";
-    document.getElementById("navbar").style.padding = "10px 0";
-    document.getElementById("imglogo").style.width = "120px";
+    document.getElementById("navbar").style.padding = "15px 0";
+    document.getElementById("imglogo").style.width = "200px";
   }
 }
