@@ -18,7 +18,7 @@ window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "15px 0";
-    document.getElementById("imglogo").style.width = "100px";
+    document.getElementById("imglogo").style.width = "180px";
   } else {
     document.getElementById("navbar").style.padding = "15px 0";
     document.getElementById("imglogo").style.width = "200px";
